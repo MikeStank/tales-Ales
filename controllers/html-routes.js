@@ -17,3 +17,4 @@ router.get("/", function(req, res) {
 
 
 module.exports = router;
+// make a new route that will query from the search page it will be a get. and will render a new search or routes.handlebars.
