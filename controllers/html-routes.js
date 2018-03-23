@@ -15,6 +15,10 @@ router.get("/", function(req, res) {
   res.render('index');
 });
 
+router.get("/", function(req, res) {
+  // send us to the next get function instead.
+  res.render('index');
+});
 
 module.exports = router;
 // make a new route that will query from the search page it will be a get. and will render a new search or routes.handlebars.
