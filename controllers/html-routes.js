@@ -15,9 +15,9 @@ router.get("/", function(req, res) {
   res.render('index');
 });
 
-router.get("/", function(req, res) {
+router.get("/results", function(req, res) {
   // send us to the next get function instead.
-  res.render('index');
+  res.render('results');
 });
 
 module.exports = router;
