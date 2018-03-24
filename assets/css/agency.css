@@ -2,6 +2,8 @@ html {
 background: url("../img/bar2.jpg") no-repeat center center;
 min-height: 100%;
 background-size: cover;
+background-repeat: repeat-y;
+
 }
 
 body {
@@ -279,3 +281,12 @@ header.masthead2 .intro-text .intro-heading {
   margin: 15px 0;
   text-transform: none;
 }
+
+
+input {
+    width: 40%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.card-block { background-color: rgba(245, 245, 245, 0.4); }
