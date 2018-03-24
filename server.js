@@ -21,7 +21,7 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-var htmlRoutes = require("./controllers/html-routes");
+var htmlRoutes = require("./routes/html-routes");
 
 app.use("/", htmlRoutes);
 
