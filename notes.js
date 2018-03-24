@@ -24,13 +24,13 @@ var router = express.Router();
 
 router.get('/', function(req, res) {
 
-  res.send('Home page');
+  res.send('Tale N Ales');
 
 });
 
-router.get('/about', function (req, res) {
+router.get('/page2', function (req, res) {
 
-  res.send('About this page');
+  res.send('Books n Drinks n Books n Drinks');
 
 });
 
@@ -49,9 +49,9 @@ router.get('/', function(req, res) {
 
 });
 
-router.get('/about', function (req, res) {
+router.get('/page2', function (req, res) {
 
-  res.send('About this page');
+  res.send('Books n Drinks n Books n Drinks');
 
 });
 
