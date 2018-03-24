@@ -4,8 +4,8 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var tableData = require("../data/tableData");
-var waitListData = require("../data/");
+var bookData = require("../db/TalesAndAles");
+var drinkData = require("../data/");
 
 
 // ===============================================================================
@@ -20,12 +20,12 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
 // Need the routes
-  app.get("/api/", function(req, res) {
+  app.get("/api/index", function(req, res) {
     res.json();
   });
 // Need the routes
-  app.get("/api/", function(req, res) {
-    res.json(waitListData);
+  app.get("/api/page2", function(req, res) {
+    res.json(bookData);
   });
 
   // API POST Requests
@@ -41,13 +41,13 @@ module.exports = function(app) {
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body-parser middleware
-    if (tableData.length < 5) {
-      tableData.push(req.body);
+    if (bookData.length < 3) {
+      bookData.push(req.body);
       res.json(true);
     }
   // Need DATA!
     else {
-  STUFF SHALL GO HERE WHNE WE HAVE DATA    .push(req.body);
+      bookData.push(req.body);
       res.json(false);
     }
   });
@@ -58,9 +58,9 @@ module.exports = function(app) {
 
   app.post("/api/clear", function() {
     // Empty out the arrays of data --- NEED DATA IN THE FIRST PLACE!!!!
-HERE IS WHERE STUFF SHALL GO     = [];
-AND HERE AS WELL YA DIG     = [];
+  bookData = [];
+// AND HERE AS WELL YA DIG     = [];
 
-    console.log(tableData);
+    console.log(bookData);
   });
 };

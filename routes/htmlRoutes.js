@@ -16,17 +16,17 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
 // NAME OF PAGE NEEDS TO BE ADDED (made this one upj)
-  app.get("/homebase", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/homebase.html"));
+  app.get("/index", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
 // NAME OF PAGE NEEDS TO BE ADDED (just made this one up)
-  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/bookBase.html"));
+  app.get("/page2", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/page2.html"));
   });
 
   // If no matching route is found default to home
   app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/reserve.html"));
+    res.sendFile(path.join(__dirname, "../public/page2.html"));
   });
 };
