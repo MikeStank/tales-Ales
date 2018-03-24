@@ -289,4 +289,7 @@ input {
     margin-right:auto;
 }
 
-.card-block { background-color: rgba(245, 245, 245, 0.4); }
+.card { background-color: rgba(245, 245, 245, 0.4); 
+ margin-top: 25px;
+
+}
