@@ -7,6 +7,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -15,8 +17,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="public/css/agency.css" rel="stylesheet">
+    <link href="public/css/animate.css" rel="stylesheet">
 
   </head>
   <body>
@@ -27,19 +29,30 @@
           <div class="intro-heading text-uppercase">Tales & Ales</div>
             <form class="navbar-form navbar-left">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search for a book">
+                <input type="text" id="search" class="form-control" placeholder="Search for a book">
               </div>
               <br>
               <br>
       
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Search</a>
+            <button id="button" type="button" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Search</button>
+            <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Search</a> -->
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Provide Suggestions</a>
 
           </form>
+          <br><br>
+          <div id="results"></div>
         </div>
       </div>
     </header>
 
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
   </body>
 
 </html>
+
